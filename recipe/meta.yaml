@@ -1,4 +1,4 @@
-{% set version = '0.5.1' %}
+{% set version = "0.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/googleCloudStorageR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/googleCloudStorageR/googleCloudStorageR_{{ version }}.tar.gz
-  sha256: 55a467a4a2b313465b9c0329fcd07a31b984407173b35cf256426c3d8362a669
+  sha256: a8494dc7f947e754e559d24e04d78a9a750d9b24adfd5af13c606194273550a9
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -52,11 +52,10 @@ test:
 about:
   home: http://code.markedmondson.me/googleCloudStorageR/
   license: MIT
-  summary: Interact with Google Cloud Storage <https://cloud.google.com/storage/> API in R. Part
-    of the 'cloudyr' <https://cloudyr.github.io/> project.
+  summary: Interact with Google Cloud Storage <https://cloud.google.com/storage/> API in R. Part of the 'cloudyr' <https://cloudyr.github.io/> project.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
