@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/googleCloudStorageR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/googleCloudStorageR/googleCloudStorageR_{{ version }}.tar.gz
-  sha256: a8494dc7f947e754e559d24e04d78a9a750d9b24adfd5af13c606194273550a9
+  sha256: 37f8bc52a75adc481945384130b9dfc5a2905a6731e57953a36a9e100f82e8fa
 
 build:
   merge_build_host: true  # [win]
