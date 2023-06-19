@@ -1,11 +1,11 @@
-About r-googlecloudstorager
-===========================
+About r-googlecloudstorager-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-googlecloudstorager-feedstock/blob/main/LICENSE.txt)
 
 Home: http://code.markedmondson.me/googleCloudStorageR/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-googlecloudstorager-feedstock/blob/main/LICENSE.txt)
 
 Summary: Interact with Google Cloud Storage <https://cloud.google.com/storage/> API in R. Part of the 'cloudyr' <https://cloudyr.github.io/> project.
 
